@@ -23,7 +23,7 @@ namespace Mole
             if (popUpcallback == null)
                 throw new ArgumentException("PopupCallback can't be null");
             this.random = random;
-            this.popUpCallback = popUpcallback;
+            this.popUpCallback += popUpcallback;
             hidden = true;
         }
         public void Show()
